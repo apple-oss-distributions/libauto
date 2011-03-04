@@ -32,6 +32,7 @@
 #import <CoreFoundation/CFData.h>
 #include <malloc/malloc.h>
 
+
 @interface TestObject : NSObject {
     __strong CFDataRef  subject;
     __strong CFMutableDataRef mutableSubject;
