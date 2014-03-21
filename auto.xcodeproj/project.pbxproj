@@ -41,6 +41,7 @@
 		8308E7BE12D295DB00C6903E /* auto_weak.h in Headers */ = {isa = PBXBuildFile; fileRef = 83FE4346061E2E5A00AA5564 /* auto_weak.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		8308E7C012D2960800C6903E /* auto_weak.h in Headers */ = {isa = PBXBuildFile; fileRef = 83FE4346061E2E5A00AA5564 /* auto_weak.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		83C6AE401203BC8B0074ABA8 /* auto_tester.h in Headers */ = {isa = PBXBuildFile; fileRef = B38454BF0DDE33B100A6A389 /* auto_tester.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		83C7004518DCE46300B746EB /* ClearStack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 83C7004418DCE46300B746EB /* ClearStack.cpp */; settings = {COMPILER_FLAGS = "-fno-builtin"; }; };
 		83E671DF12D2BBD900A7DD88 /* auto_gdb_interface.h in Headers */ = {isa = PBXBuildFile; fileRef = 399C6D830B780962006686B9 /* auto_gdb_interface.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		83E671E012D2BBD900A7DD88 /* auto_tester.h in Headers */ = {isa = PBXBuildFile; fileRef = B38454BF0DDE33B100A6A389 /* auto_tester.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		83E671E112D2BBD900A7DD88 /* auto_zone.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A69FBAD028E2DA801004A08 /* auto_zone.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -67,6 +68,7 @@
 		83E671F612D2BBE200A7DD88 /* ZoneCollectionChecking.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B377499F10F2A88A0096AF95 /* ZoneCollectionChecking.cpp */; };
 		83E671F712D2BBE200A7DD88 /* ZoneCompaction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 397572C110F42434008E3CAE /* ZoneCompaction.cpp */; };
 		83E671F812D2BBE200A7DD88 /* BlockRef.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3E8E0FC119B65BF005AE13C /* BlockRef.cpp */; };
+		96473C6316BB452400A9530D /* libDiagnosticMessagesClient.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 96473C6216BB452400A9530D /* libDiagnosticMessagesClient.dylib */; };
 		B3028C87105B1D1300B742EE /* TestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = B3028C86105B1D1300B742EE /* TestCase.m */; };
 		B3028C8C105B1D2B00B742EE /* BlackBoxTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B3028C8B105B1D2B00B742EE /* BlackBoxTest.m */; };
 		B3029FDA107C06E4007A7C94 /* slop.m in Sources */ = {isa = PBXBuildFile; fileRef = B3029FD9107C06E4007A7C94 /* slop.m */; };
@@ -165,8 +167,10 @@
 		39FCF85D0A71708E0005745A /* alloc_test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = alloc_test; sourceTree = BUILT_PRODUCTS_DIR; };
 		8308E70212D28A6E00C6903E /* libauto.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libauto.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		8308E84012D2971200C6903E /* IndigoSDK.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = IndigoSDK.xcconfig; path = AppleInternal/XcodeConfig/IndigoSDK.xcconfig; sourceTree = DEVELOPER_DIR; };
+		83C7004418DCE46300B746EB /* ClearStack.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ClearStack.cpp; sourceTree = "<group>"; };
 		83FE4345061E2E5A00AA5564 /* auto_weak.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = auto_weak.cpp; sourceTree = "<group>"; };
 		83FE4346061E2E5A00AA5564 /* auto_weak.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = auto_weak.h; sourceTree = "<group>"; };
+		96473C6216BB452400A9530D /* libDiagnosticMessagesClient.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libDiagnosticMessagesClient.dylib; path = ../../../../../usr/lib/libDiagnosticMessagesClient.dylib; sourceTree = "<group>"; };
 		B3028C85105B1D1300B742EE /* TestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCase.h; sourceTree = "<group>"; };
 		B3028C86105B1D1300B742EE /* TestCase.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = TestCase.m; sourceTree = "<group>"; };
 		B3028C8A105B1D2B00B742EE /* BlackBoxTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlackBoxTest.h; sourceTree = "<group>"; };
@@ -290,6 +294,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96473C6316BB452400A9530D /* libDiagnosticMessagesClient.dylib in Frameworks */,
 				B32F16C811A5EB3000874217 /* libCrashReporterClient.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,6 +305,7 @@
 		08FB7794FE84155DC02AAC07 /* auto */ = {
 			isa = PBXGroup;
 			children = (
+				96473C6216BB452400A9530D /* libDiagnosticMessagesClient.dylib */,
 				B32F16C711A5EB3000874217 /* libCrashReporterClient.a */,
 				B37E763E0DA5726E0091CCE1 /* auto_exports */,
 				08FB7795FE84155DC02AAC07 /* Source */,
@@ -334,6 +340,7 @@
 				CFC8E7A7065AE1300071E64C /* BlockIterator.h */,
 				B38C85E211890118004161F9 /* BlockRef.h */,
 				B3E8E0FC119B65BF005AE13C /* BlockRef.cpp */,
+				83C7004418DCE46300B746EB /* ClearStack.cpp */,
 				CFC9341F06527D0300155736 /* Configuration.h */,
 				CFC9342106527D0300155736 /* Definitions.h */,
 				CFC9342006527D0300155736 /* Definitions.cpp */,
@@ -761,6 +768,7 @@
 				BCCDF7C80DCA3A3F005047F2 /* PointerHash.cpp in Sources */,
 				396ABCDA0E8B0B1B00B2550B /* ThreadLocalCollector.cpp in Sources */,
 				BC392F860ED5EC0100D1C8CB /* ZoneDump.cpp in Sources */,
+				83C7004518DCE46300B746EB /* ClearStack.cpp in Sources */,
 				10EF66B20F7ADBA600A7CD1A /* auto_dtrace.d in Sources */,
 				392794EA10182B7200224947 /* ZoneCollectors.cpp in Sources */,
 				395A935810AB61CB00214B85 /* SubzonePartition.cpp in Sources */,
